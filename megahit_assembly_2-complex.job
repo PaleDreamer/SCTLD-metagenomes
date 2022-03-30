@@ -1,0 +1,29 @@
+# /bin/sh 
+# ----------------Parameters---------------------- #
+#$  -S /bin/sh
+#$ -pe mthread 10
+#$ -q sThC.q
+#$ -l mres=80G,h_data=8G,h_vmem=8G
+#$ -l cpu_arch='haswell|skylake'
+#$ -cwd
+#$ -j y
+#$ -N megahit_assembly_2
+#$ -o megahit_assembly_2.log
+#
+# ----------------Modules------------------------- #
+module load tools/conda
+start-conda
+conda activate megahit
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+
+megahit --presets meta-large \
+-1 /scratch/genomics/stegmannt/metagenomes/first_data/00_raw/Coral1_R1_001_val_1.fq \
+-2 /scratch/genomics/stegmannt/metagenomes/first_data/00_raw/Coral1_R2_001_val_2.fq \
+-o ../data/working/Coral1_assembly_complex --out-prefix "Coral1"
+#
+echo = `date` job $JOB_NAME done

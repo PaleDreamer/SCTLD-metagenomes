@@ -1,0 +1,27 @@
+# /bin/sh 
+# ----------------Parameters---------------------- #
+#$  -S /bin/sh
+#$ -q sThC.q
+#$ -l mres=8G,h_data=8G,h_vmem=8G
+#$ -l cpu_arch='haswell|skylake'
+#$ -cwd
+#$ -j y
+#$ -N assembly_qc
+#$ -o assembly_qc.log
+#
+# ----------------Modules------------------------- #
+module load tools/conda
+start-conda
+conda activate quast
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+#
+quast ../data/working/assembly_sample_Coral1/Coral1.contigs.fa -o ../data/results/quast_output_Coral1
+quast ../data/working/assembly_sample_Coral2/Coral2.contigs.fa -o ../data/results/quast_output_Coral2
+quast ../data/working/assembly_sample_Coral4/Coral4.contigs.fa -o ../data/results/quast_output_Coral4
+quast ../data/working/assembly_sample_Coral5/Coral5.contigs.fa -o ../data/results/quast_output_Coral5
+quast ../data/working/assembly_sample_T3-4-Past_S113_L001/T3-4-Past_S113_L001.contigs.fa -o ../data/results/quast_output_T3-4-Past_S113_L001
+#
+echo = `date` job $JOB_NAME done
