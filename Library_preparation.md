@@ -9,7 +9,7 @@ The protocol consists of 5 steps. Safe stopping points will be **indicated**.
 
 ### Adaptor ligation
 
-### Clean-up reaction 1
+### Clean-up reaction 1 (probably change this)
 1. Vortex AmPure XP Purification Beads to resuspend.
  
 2. Add 57 μl (0.8X) resuspended beads to the PCR reaction. Mix well by pipetting up and down at least 10 times. Be careful to expel all of the liquid out of the tip during the last mix. Vortexing for 3-5 seconds on high can also be used. If centrifuging samples after mixing, be sure to stop the centrifugation before the beads start to settle out.
