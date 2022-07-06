@@ -100,8 +100,9 @@ Reagents expressed in **bold** need a calculation from this document.
 3. Add 150 μl of 1X TE and 15 μl of Proteinase K to the sample pellet. 
 4. Mix beads by gentle vortexing (1,200 rpm) or by flicking the tube. 
 
-*(Note: The pellet may be difficult to resuspend initially due to the high concentration of genomic DNA bound to the beads.) Incubate the slurry in a heat block or thermomixer set at 65°C for 20 minutes, with occasional mixing (3–5 times).*
+*(Note: The pellet may be difficult to resuspend initially due to the high concentration of genomic DNA bound to the beads.)*
 
+5. Incubate the slurry in a heat block or thermomixer set at 65°C for 20 minutes, on 40-50 rpm.
 6. Briefly centrifuge the sample at 13,000 rpm in a microcentrifuge.
 7. Place the tube on the magnetic rack for 2–5 minutes or until the beads have collected to the wall of the tube and the solution is clear.
 8. Carefully remove the supernatant and transfer to a fresh microcentrifuge tube.
